@@ -25,7 +25,7 @@ The final Tableau dashboard uses this data to identify peak months, evaluate was
 
 To build this business simulation (10 washers, 10 dryers, 2 vending machines), I developed a custom data generation pipeline in Python. The script programmatically enforces relational integrity, operational constraints, and realistic business logic across four tables.
 
-### 📦 Core Python Libraries Used
+### Core Python Libraries Used
 
 * **`pandas`**: Used as the primary data manipulation engine to construct DataFrames, handle date ranges, execute data-type casting, and perform `.merge()` lookups to map dimension attributes to the fact table.
 * **`numpy`**: Leveraged for its vectorized mathematical functions and random sampling capabilities (`numpy.random`). This was critical for generating random-yet-constrained distributions for transaction frequencies, customer behavior, and cost variances.
@@ -34,6 +34,6 @@ To build this business simulation (10 washers, 10 dryers, 2 vending machines), I
 
 ---
 
-### ⚙️ How the 4 Tables Were Developed
+### How the 4 Tables Were Developed
 
 The pipeline operates deterministically to build three **Dimension (Lookup) tables** before compiling the central **Fact (Transaction) table**:
